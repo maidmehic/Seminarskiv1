@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.fit.maid.seminarskiv1.RegistracijaActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/unosIme"
+        android:src="@drawable/cribslogo"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:theme="@style/TextLabel"
+        android:id="@+id/unosIme"
+        android:layout_above="@id/unosPrezime"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:id="@+id/txtIme"
+            android:hint="Ime"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/unosPrezime"
+        android:layout_centerInParent="true"
+        android:theme="@style/TextLabel"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtPrezime"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:hint="Prezime" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:theme="@style/TextLabel"
+        android:layout_below="@id/unosPrezime"
+        android:id="@+id/unosEmailNovi"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtEmailNovi"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:hint="Email adresa" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:theme="@style/TextLabel"
+        android:layout_below="@id/unosEmailNovi"
+        android:id="@+id/unosLozinkaNovi"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtLozinka"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Lozinka" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unosLozinkaNovi"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Registracija"
+        android:id="@+id/btnRegister"/>
+</RelativeLayout>

@@ -1,0 +1,440 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/btnBack1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/white"
+                android:src="@drawable/ic_baseline_arrow_back_24px"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white"
+                android:text="Više detalja"/>
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroolViseDetalja">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            tools:context="com.fit.maid.seminarskiv1.fragmenti.ViseDetaljaFragment">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaDatumObjave"
+                android:textSize="16dp"
+                android:text="Datum objave:"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtDatumObjave1"
+                android:layout_alignParentTop="true"
+                android:textSize="16dp"
+                android:layout_alignParentRight="true"
+                android:text="28.10.2018"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaAdresa1"
+                android:textSize="16dp"
+                android:text="Adresa:"
+                android:layout_below="@id/oznakaDatumObjave"
+                android:layout_marginTop="11dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtAdresa1"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/oznakaAdresa1"
+                android:textSize="16dp"
+                android:text="Ekonomija bb"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaGodinaIzgradnje"
+                android:textSize="16dp"
+                android:text="Godina izgradnje:"
+                android:layout_below="@id/oznakaAdresa1"
+                android:layout_marginTop="11dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtGodinaIzgradnje"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/oznakaGodinaIzgradnje"
+                android:textSize="16dp"
+                android:text="2000-2001"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaVrstaGrijanja"
+                android:textSize="16dp"
+                android:text="Vrsta grijanja:"
+                android:layout_below="@id/oznakaGodinaIzgradnje"
+                android:layout_marginTop="11dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtVrstaGrijanja"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/oznakaVrstaGrijanja"
+                android:textSize="16dp"
+                android:text="Centralno"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaPlacanje"
+                android:textSize="16dp"
+                android:text="Plaćanje:"
+                android:layout_below="@id/oznakaVrstaGrijanja"
+                android:layout_marginTop="11dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtPlacanje"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/oznakaPlacanje"
+                android:textSize="16dp"
+                android:text="Po dogovoru"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaVrstaPoda"
+                android:textSize="16dp"
+                android:text="Vrsta poda:"
+                android:layout_below="@id/oznakaPlacanje"
+                android:layout_marginTop="11dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtVrstaPoda"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/oznakaVrstaPoda"
+                android:textSize="16dp"
+                android:text="Laminat"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaOrjentacija"
+                android:textSize="16dp"
+                android:text="Primarna orjentacija:"
+                android:layout_below="@id/oznakaVrstaPoda"
+                android:layout_marginTop="11dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtOrjentacija"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/oznakaOrjentacija"
+                android:textSize="16dp"
+                android:text="Jugoistok"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaKvadrata"
+                android:textSize="16dp"
+                android:text="Kvadrata"
+                android:layout_below="@id/oznakaOrjentacija"
+                android:layout_marginTop="11dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtKvadrata"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/oznakaKvadrata"
+                android:textSize="16dp"
+                android:text="90 m2"
+                />
+
+            <TextView
+                android:id="@+id/oznakaBalkon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oznakaKvadrata"
+                android:layout_marginTop="11dp"
+                android:text="Balkon:"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:enabled="false"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbBalkon"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/oznakaBalkon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaParking"
+                android:textSize="16dp"
+                android:text="Parking:"
+                android:layout_below="@id/oznakaBalkon"
+                android:layout_marginTop="11dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:enabled="false"
+                android:id="@+id/cbParking"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/oznakaParking"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaKlima"
+                android:textSize="16dp"
+                android:text="Klima:"
+                android:layout_below="@id/oznakaParking"
+                android:layout_marginTop="11dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/cbKlima"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/oznakaKlima"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaKablovska"
+                android:textSize="16dp"
+                android:text="Kablovska:"
+                android:layout_below="@id/oznakaKlima"
+                android:layout_marginTop="11dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:enabled="false"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbKablovska"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/oznakaKablovska"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaInternet"
+                android:textSize="16dp"
+                android:text="Internet:"
+                android:layout_below="@id/oznakaKablovska"
+                android:layout_marginTop="11dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:id="@+id/cbInternet"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/oznakaInternet"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaVideo"
+                android:textSize="16dp"
+                android:text="Video nadzor:"
+                android:layout_below="@id/oznakaInternet"
+                android:layout_marginTop="11dp"
+                />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:id="@+id/cbVideo"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/oznakaVideo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaBlindirana"
+                android:textSize="16dp"
+                android:text="Blindirana vrata:"
+                android:layout_below="@id/oznakaVideo"
+                android:layout_marginTop="11dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:id="@+id/cbBlindirana"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/oznakaBlindirana"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaKontaktInfo"
+                android:textSize="18dp"
+                android:text="Kontakt informacije"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cbBlindirana"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_phone_24px"
+                android:id="@+id/imgPhone"
+                android:layout_below="@id/oznakaKontaktInfo"
+                android:layout_marginTop="25dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBrojTelefona"
+                android:text="062-365-198"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:layout_alignTop="@+id/imgPhone"
+                android:layout_toRightOf="@id/imgPhone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaBrojTelefona"
+                android:text="Telefon"
+                android:textSize="12dp"
+                android:layout_toRightOf="@id/imgPhone"
+                android:layout_below="@id/txtBrojTelefona"
+                android:layout_marginLeft="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_email_24px"
+                android:id="@+id/imgEmail"
+                android:layout_below="@id/imgPhone"
+                android:layout_marginTop="25dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEmail"
+                android:text="heyfromelizabeth@gmail.com"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:layout_alignTop="@+id/imgEmail"
+                android:layout_toRightOf="@id/imgEmail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oznakaEmail"
+                android:text="Email"
+                android:textSize="12dp"
+                android:layout_toRightOf="@id/imgEmail"
+                android:layout_below="@id/txtEmail"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

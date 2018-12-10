@@ -1,0 +1,286 @@
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <android.support.design.widget.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal">
+
+
+         <ImageButton
+             android:layout_width="?attr/actionBarSize"
+             android:layout_height="?attr/actionBarSize"
+             android:id="@+id/btnBack"
+             android:background="?attr/selectableItemBackgroundBorderless"
+             android:tint="@android:color/white"
+             android:src="@drawable/ic_baseline_arrow_back_24px"/>
+
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical"
+             android:layout_weight="1"
+             android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+             android:textColor="@android:color/white"
+             android:text="Detalji smještaja"/>
+
+         <ImageButton
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_baseline_star_border_24px"
+             android:tint="@android:color/white"
+             android:id="@+id/btnSpasi"
+             style="@style/Widget.AppCompat.Button.Borderless"
+             android:gravity="center"
+             android:paddingLeft="24dp"
+             android:paddingRight="24dp"
+             android:textColor="@android:color/white"/>
+      </LinearLayout>
+
+   </android.support.design.widget.AppBarLayout>
+
+
+
+      <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="10dp"
+          tools:context="com.fit.maid.seminarskiv1.fragmenti.DetaljiSmjestajaFragment">
+
+         <ImageView
+             android:id="@+id/imgSlikaSmjestaja"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentTop="true"
+             android:src="@drawable/slikaa" />
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/txtNaslovSmjestaja"
+             android:text="Trosoban namješten stan"
+             android:textSize="18dp"
+             android:layout_marginTop="20dp"
+             android:layout_below="@id/imgSlikaSmjestaja"
+             android:layout_marginLeft="20dp"
+             />
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="37dp"
+             android:text="Mapa"
+             android:id="@+id/btnOtvoriMapu"
+             android:layout_below="@id/imgSlikaSmjestaja"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="15dp"
+             android:layout_marginTop="12dp"
+             />
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_baseline_location_city_24px"
+             android:layout_below="@id/txtNaslovSmjestaja"
+             android:layout_marginTop="30dp"
+             android:layout_marginLeft="20dp"
+             android:id="@+id/ikonaLokacija"
+             />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Banja Luka"
+             android:layout_toRightOf="@id/ikonaLokacija"
+             android:layout_alignTop="@id/ikonaLokacija"
+             android:layout_marginTop="-10dp"
+             android:textSize="15dp"
+             android:id="@+id/txtGrad"
+             android:layout_marginLeft="10dp"
+             />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/oznakaGrad"
+             android:text="Grad"
+             android:textSize="12dp"
+             android:layout_toRightOf="@id/ikonaLokacija"
+             android:layout_below="@id/txtGrad"
+             android:layout_marginLeft="10dp"/>
+
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_baseline_location_on_24px"
+             android:id="@+id/ikonaAdresa"
+             android:layout_alignTop="@id/ikonaLokacija"
+             android:layout_toLeftOf="@id/txtAdresa"
+             />
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Ekonomija bb"
+             android:textSize="15dp"
+             android:layout_marginLeft="10dp"
+             android:id="@+id/txtAdresa"
+             android:layout_marginRight="20dp"
+             android:layout_alignTop="@+id/txtGrad"
+             android:layout_alignParentRight="true"
+             />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/oznakaAdresa"
+             android:text="Adresa"
+             android:textSize="12dp"
+             android:layout_alignTop="@id/oznakaGrad"
+             android:layout_toRightOf="@id/ikonaAdresa"
+             android:layout_marginLeft="10dp"
+             />
+
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_baseline_local_hotel_24px"
+             android:layout_marginLeft="20dp"
+             android:id="@+id/ikonaBrojSoba"
+             android:layout_marginTop="40dp"
+             android:layout_below="@id/ikonaLokacija"
+             />
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Trosoban"
+             android:textSize="15dp"
+             android:layout_marginTop="-10dp"
+             android:id="@+id/txtBrojSoba"
+             android:layout_marginLeft="10dp"
+             android:layout_toRightOf="@id/ikonaBrojSoba"
+             android:layout_alignTop="@id/ikonaBrojSoba"
+             />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/oznakaBrojSoba"
+             android:text="Broj soba"
+             android:textSize="12dp"
+             android:layout_toRightOf="@id/ikonaBrojSoba"
+             android:layout_below="@id/txtBrojSoba"
+             android:layout_marginLeft="10dp"/>
+
+
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_baseline_money_24px"
+             android:layout_alignTop="@id/ikonaBrojSoba"
+             android:layout_alignStart="@id/ikonaAdresa"
+             android:layout_alignLeft="@id/ikonaAdresa"
+             android:id="@+id/ikonaCijena"
+             />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtCijenaInfo"
+          android:textSize="15dp"
+          android:layout_marginLeft="3dp"
+          android:layout_toRightOf="@id/txtCijena"
+          android:layout_alignBottom="@id/txtCijena"
+          android:text="KM"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="300"
+             android:textSize="15dp"
+             android:layout_marginLeft="10dp"
+             android:id="@+id/txtCijena"
+             android:layout_alignTop="@id/txtBrojSoba"
+             android:layout_toRightOf="@id/ikonaCijena"
+             />
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/oznakaCijena"
+             android:text="Cijena"
+             android:textSize="12dp"
+             android:layout_alignTop="@id/oznakaBrojSoba"
+             android:layout_toRightOf="@id/ikonaCijena"
+             android:layout_marginLeft="10dp"
+             />
+
+
+         <TextView
+             android:id="@+id/oznakaOpis"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Opis"
+             android:textSize="18dp"
+             android:layout_alignStart="@id/ikonaBrojSoba"
+             android:layout_alignLeft="@id/ikonaBrojSoba"
+             android:layout_below="@id/oznakaBrojSoba"
+             android:layout_marginTop="13dp"
+             />
+
+         <ScrollView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignStart="@id/oznakaOpis"
+             android:layout_alignLeft="@id/oznakaOpis"
+             android:layout_below="@id/oznakaOpis"
+             android:layout_marginTop="5dp"
+             android:layout_above="@id/btnViseDetalja"
+             android:id="@+id/opisScrolView">
+
+            <TextView
+                android:id="@+id/txtOpis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trosoban namješten stan dvostrane orijentacije povrsite 57m2, sa balkonom, grijanjem, klimom...  Uz cijenu dolazi internet i voda.Trosoban namješten stan dvostrane orijentacijepovrsite 57m2, sa balkonom, grijanjem, klimom... Uz cijenu dolazi internet i voda.Trosoban namješten stan dvostrane orijentacijepovrsite 57m2, sa balkonom, grijanjem, klimom..Uz cijenu dolazi internet i voda."
+                />
+         </ScrollView>
+
+         <Button
+             android:id="@+id/btnViseDetalja"
+             android:layout_width="wrap_content"
+             android:layout_height="37dp"
+             android:layout_marginTop="5dp"
+             android:layout_centerHorizontal="true"
+             android:layout_alignParentBottom="true"
+             android:text="Više detalja" />
+
+
+      </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

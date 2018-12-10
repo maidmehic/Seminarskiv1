@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_novo"
+            android:icon="@drawable/ic_baseline_fiber_new_24px"
+            android:title="Najnovije" />
+        <item
+            android:id="@+id/nav_lokacija"
+            android:icon="@drawable/ic_baseline_location_searching_24px"
+            android:title="Lokacija" />
+        <item
+            android:id="@+id/nav_spremljeno"
+            android:icon="@drawable/ic_baseline_star_rate_18px"
+            android:title="Spašeno" />
+    </group>
+
+    <item android:title="Kategorije:">
+        <menu>
+            <item
+                android:id="@+id/nav_stan"
+                android:title="    Stanovi" />
+            <item
+                android:id="@+id/nav_kuca"
+                android:title="    Kuće" />
+            <item
+                android:id="@+id/nav_apartman"
+                android:title="    Apartmani" />
+            <item
+                android:id="@+id/nav_soba"
+                android:title="    Sobe" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Odjava" />
+
+</menu>

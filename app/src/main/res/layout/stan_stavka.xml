@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="74dp"
+        android:id="@+id/imgSlika"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNaslov"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/imgSlika"
+        android:text="Neki naslov dasdas dsad  "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDatumObjave"
+        android:textSize="16dp"
+        android:layout_below="@id/txtNaslov"
+        android:layout_toRightOf="@id/imgSlika"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="17dp"
+        android:text="28.10.2018"/>
+
+    <TextView
+        android:id="@+id/txtCijena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_toLeftOf="@id/txtKM"
+        android:layout_marginRight="4dp"
+        android:layout_alignBottom="@id/txtDatumObjave"
+        android:text="300" />
+
+    <TextView
+        android:id="@+id/txtKM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/txtDatumObjave"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="KM" />
+
+</RelativeLayout>

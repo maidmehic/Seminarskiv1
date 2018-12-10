@@ -1,0 +1,74 @@
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/unosEmail"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/cribslogo"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:theme="@style/TextLabel"
+        android:id="@+id/unosEmail"
+        android:layout_above="@id/unosLozinka"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:id="@+id/txtEmail"
+            android:hint="Email"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:theme="@style/TextLabel"
+        android:layout_centerInParent="true"
+        android:id="@+id/unosLozinka"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:hint="Lozinka"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/unosLozinka"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Prijava"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Novi račun"
+        android:textColor="@android:color/white"
+        android:id="@+id/register"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        />
+</RelativeLayout>
